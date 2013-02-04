@@ -1,0 +1,27 @@
+$(document).ready(function(){
+	$(".home").click(function(){
+		$(".home_body").fadeIn();
+		$(".context_body").fadeOut();
+		$(".notification_body").fadeOut();
+		$(".home").addClass("active");
+		$(".context").removeClass("active");
+		$(".notifications").removeClass("active");
+	});
+	$(".context").click(function(){
+		$(".home_body").fadeOut();
+		$(".context_body").fadeIn();
+		$(".notification_body").fadeOut();
+		$(this).toggleClass("active");
+		$(".home").removeClass("active");
+		$(".context").addClass("active");
+		$(".notifications").removeClass("active");
+	});
+	$(".notifications").click(function(){
+		$(".home_body").fadeOut();
+		$(".context_body").fadeOut();
+		$(".notification_body").fadeIn();		
+		$(".home").removeClass("active");
+		$(".context").removeClass("active");
+		$(".notifications").addClass("active");
+	});	
+});
