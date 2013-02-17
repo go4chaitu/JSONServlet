@@ -23,5 +23,15 @@ $(document).ready(function(){
 		$(".home").removeClass("active");
 		$(".context").removeClass("active");
 		$(".notifications").addClass("active");
+	});
+	$("#social_dialog").hide();
+		
+	$(".objects").click(function(){	
+		$('#social_dialog').slideUp();
+		$('#social_dialog').fadeIn();		
+	});	
+	$("#close_window").click(function(){	
+		$('#social_dialog').slideDown();
+		$('#social_dialog').fadeOut();		
 	});	
 });

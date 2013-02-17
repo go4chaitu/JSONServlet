@@ -478,3 +478,30 @@ color: rgb(11, 14, 27);
     background-color: white;  
     font-weight: bold;
 }
+#social_dialog {
+	background-color: rgb(43, 44, 53);
+	position: absolute;
+	z-index: 9000;
+	left: 20%;
+	opacity: 0.9;
+	top: 70px;
+	height: 70%;
+	width: 60%;	
+}
+.social_dialog_header {
+    height: 35px;
+    background-color: rgb(31, 36, 173);
+    margin: 0px;
+}
+#close_window {
+    float: right;
+    color: rgb(239, 239, 245);
+    background-image: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#close_window:hover {
+color: rgb(180, 180, 245);
+}

@@ -1,8 +1,9 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="../css/clarity.css">
-<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />  
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 <script src="../js/polling.js"></script>
 <!-- <script src="../js/myjquery.js"></script> -->
 <script src="../js/clarity_home.js"></script>
@@ -11,7 +12,16 @@
 <body>
 <div id="ppm_app" class="ppm_page_bg">
 <div class="greyout"></div>
-<div class="ppm_header_social"><div class="ppm_header_social_body"><div class="comments">
+<div class="ppm_header_social">
+<div class="ppm_header_social_body">
+
+<div id="social_dialog">
+<ul class="social_dialog_header">
+ <li id="close_window">close</li>
+</ul>
+<ul class="social_dialog_body"></ul></div>
+
+<div class="comments">
 
 <div class="social_body_header">
 <ul>
