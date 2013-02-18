@@ -1,7 +1,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="../css/clarity.css">
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />  
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 <script src="../js/polling.js"></script>
@@ -10,101 +11,152 @@
 <script src="../js/jsfunctions.js"></script>
 </head>
 <body>
-<div id="ppm_app" class="ppm_page_bg">
-<div class="greyout"></div>
-<div class="ppm_header_social">
-<div class="ppm_header_social_body">
+	<div id="ppm_app" class="ppm_page_bg">
+		<div class="greyout"></div>
+		<div class="ppm_header_social">
+			<div class="ppm_header_social_body">
 
-<div id="social_dialog">
-<ul class="social_dialog_header">
- <li id="close_window">close</li>
-</ul>
-<ul class="social_dialog_body"></ul></div>
+				<div id="social_dialog">
+					<ul class="social_dialog_header">
+						<li id="close_window">close</li>
+					</ul>
+					<ul class="social_dialog_body"></ul>
+				</div>
 
-<div class="comments">
+				<div class="comments">
 
-<div class="social_body_header">
-<ul>
-<li class="home">Home</li>
-<li class="context">Context</li>
-<li class="notifications">Notifications</li>
-</ul></div>
-<div class="context_body">
-</div>
-<div class="notification_body">
-</div>
-<div class="home_body">
-<div class="social_body_postbox">
-<div class="social_body_innerbox">    
-  <div class="post-box" data-placeholder="Want to post a message??" contenteditable="true"><br></div>
-    <ul class="tags"><li><a href="#">pilot(project)<span class="tip">This is an instance of project object</span></a></li><li><a href="#">hurricane(application)
-<span class="tip">This is an instance of application object</span>
-</a></li><li><a href="#">collaboration(idea)
-<span class="tip">This is an instance of idea object</span>
-</a></li></ul>
-</div>
-    <div class="buttons">
-       <ul><li class="posts">Post</li><li class="attach">Attachments</li><li class="objects">Clarity Objects</li><li class="links">Links</li></ul>
-    </div>
-</div>
-<div class="social_body_posts">
-  
-  <ul>
-  <li class="posts_header"> Today's posts</li>
-  <li class="posts_row">
-  <div class="age">few minutes ago</div><div class="profile">
- <div class="picture"></div>
- <div class="name">Chaitanya Saragadam</div>
- 
-</div>
-  <div class="message">Students are busy people. Many are trying to balance a full course load, extracurricular activities, an on- or off-campus job, and relationships with family and friends. Competing responsibilities require them to prioritize, and students are not likely to invest much time or energy in something for which they see little long-term significance.</div><div class="submenu">
- <ul><li class="tooltip_comment"></li><li class="tooltip_attch"></li><li class="tooltip_people"></li></ul>
-</div>
-<div class="handle"></div>
-</li>
-  <li class="posts_row">
-<div class="age">2 hrs ago</div>
-  <div class="profile">
- <div class="picture"></div>
- <div class="name">Shahrukh Khan</div>
- <div class="age"></div>
-</div>
-  <div class="message">Students are busy people. Many are trying to balance a full course load, extracurricular activities, an on- or off-campus job, and relationships with family and friends. Competing responsibilities require them to prioritize, and students are not likely to invest much time or energy in something for which they see little long-term significance.</div><div class="submenu">
- <ul><li class="tooltip_comment"></li><li class="tooltip_attch"></li><li class="tooltip_people"></li></ul>
-</div>
-<div class="handle"></div>
-</li>
+					<div class="social_body_header">
+						<ul>
+							<li class="home">Home</li>
+							<li class="context">Context</li>
+							<li class="notifications">Notifications</li>
+						</ul>
+					</div>
+					<div class="context_body"></div>
+					<div class="notification_body"></div>
+					<div class="home_body">
+						<div class="social_body_postbox">
+							<div class="social_body_innerbox">
+								<div class="post-box"
+									data-placeholder="Want to post a message??"
+									contenteditable="true">
+									<br>
+								</div>
+								<ul class="tags">
+									<li><a href="#">pilot(project)<span class="tip">This
+												is an instance of project object</span></a></li>
+									<li><a href="#">hurricane(application) <span
+											class="tip">This is an instance of application object</span>
+									</a></li>
+									<li><a href="#">collaboration(idea) <span class="tip">This
+												is an instance of idea object</span>
+									</a></li>
+								</ul>
+							</div>
+							<div class="buttons">
+								<ul>
+									<li class="posts">Post</li>
+									<li class="attach">Attachments</li>
+									<li class="objects">Clarity Objects</li>
+									<li class="links">Links</li>
+								</ul>
+							</div>
+						</div>
+						<div class="social_body_posts">
 
-</ul>
-<ul>
-  <li class="posts_header">Older posts</li>
-  <li class="posts_row">
-<div class="age">few days ago</div>
-  <div class="profile">
- <div class="picture"></div>
- <div class="name">Chaitanya Saragadam</div>
- <div class="age"></div>
-</div>
-  <div class="message">Students are busy people. Many are trying to balance a full course load, extracurricular activities, an on- or off-campus job, and relationships with family and friends. Competing responsibilities require them to prioritize, and students are not likely to invest much time or energy in something for which they see little long-term significance.</div><div class="submenu">
- <ul><li class="tooltip_comment"></li><li class="tooltip_attch"></li><li class="tooltip_people"></li></ul>
-</div>
-<div class="handle"></div>
-</li>
+							<ul>
+								<li class="posts_header" id="todayposts">Today's posts</li>
+								<li class="posts_row">
+									<div class="age">few minutes ago</div>
+									<div class="profile">
+										<div class="picture"></div>
+										<div class="name">Chaitanya Saragadam</div>
+									</div>
+									<div class="message">Students are busy people. Many are
+										trying to balance a full course load, extracurricular
+										activities, an on- or off-campus job, and relationships with
+										family and friends. Competing responsibilities require them to
+										prioritize, and students are not likely to invest much time or
+										energy in something for which they see little long-term
+										significance.</div>
+									<div class="submenu">
+										<ul>
+											<li class="tooltip_comment"></li>
+											<li class="tooltip_attch"></li>
+											<li class="tooltip_people"></li>
+										</ul>
+									</div>
+									<div class="handle"></div>
+								</li>
+								<li class="posts_row">
+									<div class="age">2 hrs ago</div>
+									<div class="profile">
+										<div class="picture"></div>
+										<div class="name">Shahrukh Khan</div>
+										<div class="age"></div>
+									</div>
+									<div class="message">Students are busy people. Many are
+										trying to balance a full course load, extracurricular
+										activities, an on- or off-campus job, and relationships with
+										family and friends. Competing responsibilities require them to
+										prioritize, and students are not likely to invest much time or
+										energy in something for which they see little long-term
+										significance.</div>
+									<div class="submenu">
+										<ul>
+											<li class="tooltip_comment"></li>
+											<li class="tooltip_attch"></li>
+											<li class="tooltip_people"></li>
+										</ul>
+									</div>
+									<div class="handle"></div>
+								</li>
 
-</ul>
+							</ul>
+							<ul>
+								<li class="posts_header" id="oldposts">Older posts</li>
+								<li class="posts_row">
+									<div class="age">few days ago</div>
+									<div class="profile">
+										<div class="picture"></div>
+										<div class="name">Chaitanya Saragadam</div>
+										<div class="age"></div>
+									</div>
+									<div class="message">Students are busy people. Many are
+										trying to balance a full course load, extracurricular
+										activities, an on- or off-campus job, and relationships with
+										family and friends. Competing responsibilities require them to
+										prioritize, and students are not likely to invest much time or
+										energy in something for which they see little long-term
+										significance.</div>
+									<div class="submenu">
+										<ul>
+											<li class="tooltip_comment"></li>
+											<li class="tooltip_attch"></li>
+											<li class="tooltip_people"></li>
+										</ul>
+									</div>
+									<div class="handle"></div>
+								</li>
+
+							</ul>
 
 
-</div>
-</div>
-</div>
-<div class="sidebar">
-<div class="my_profile">Chaitanya Saragadam
-<ul><li><span>Last login</span>4 days ago</li><li><span>Unread posts</span>3</li><li><span>Tags</span>2</li></ul>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div class="my_profile">
+						Chaitanya Saragadam
+						<ul>
+							<li><span>Last login</span>4 days ago</li>
+							<li><span>Unread posts</span>3</li>
+							<li><span>Tags</span>2</li>
+						</ul>
 
-</div>
-<div class="my_groups">Groups</div>
-<div class="recent_activity">Recent Activity</div>
-</div>
-
+					</div>
+					<div class="my_groups">Groups</div>
+					<div class="recent_activity">Recent Activity</div>
+				</div>
 </body>
 </html>

@@ -336,6 +336,7 @@ padding: 1px;
     margin-left: 50px;
     top: 55px;
 }
+
 .ppm_header_social:hover {
 position: absolute;
 top: 3px;
@@ -352,6 +353,7 @@ color: rgb(29, 29, 49);
 padding-left: 15px;
 background-color: #b1c2e5;
 background-image: none;
+display: block;
 }
 .ppm_header_social {
 display: block;

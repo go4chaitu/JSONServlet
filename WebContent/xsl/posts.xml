@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+    <xsl:for-each select="rows/row">
+    <li class="posts_row">
+		<div class="age"><xsl:value-of select="age"/></div>
+		<div class="profile">
+			<div class="picture"><xsl:value-of select="picture"/></div>
+			<div class="name"><xsl:value-of select="name"/></div>
+		</div>
+		<div class="message"><xsl:value-of select="message"/></div>
+		<div class="submenu">
+			<ul>
+				<li class="tooltip_comment"></li>
+				<li class="tooltip_attch"></li>
+				<li class="tooltip_people"></li>
+			</ul>
+		</div>
+		<div class="handle"></div>
+	</li>
+    </xsl:for-each>
+</xsl:template>
+
+</xsl:stylesheet>
