@@ -26,15 +26,13 @@ $(document).ready(function(){
 	});
 	$("#social_dialog").hide();
 		
-	$(".objects").click(function(){	
-		$('#social_dialog').slideUp();
-		$('#social_dialog').fadeIn();		
-	});	
+	$(".objects").click(open_dialog);	
 	$("#close_window").click(function(){	
 		$('#social_dialog').slideDown();
 		$('#social_dialog').fadeOut();
 		var result = displayResult();
 		$('#todayposts').after(result);
+		$(".posts_row").click(open_dialog);
 	});	
 	
 	function displayResult1()
@@ -76,4 +74,25 @@ $(document).ready(function(){
 		  }
 		return resultDoc;
 	}	
+	$(".posts_row").click(open_dialog);
+	$(".posts").click(post_message);
+	$('#social_dialog').draggable( {containment: ".ppm_header_social_body", scroll: false} ).resizable();
+	
+	function open_dialog(){
+		$('#social_dialog').slideUp();
+		$('#social_dialog').fadeIn();
+	}	
+	
+	function post_message(){		
+		var msg = $(".post-box").text();
+		msg = msg.replace(/^\s+|\s+$/g,'');
+		if( msg.length == 0 ) return;	
+		$(".post-box").text('');
+		var age = "few secs ago";
+		var name = "Chaitanya Saragadam";
+		var newPost = $('<li class=\"posts_row\"><div class=\"age\">'+age+'</div><div class=\"profile\"><div class=\"picture\"></div><div class=\"name\">'+name+'</div></div><div class=\"message\">'+msg+'</div><div class=\"submenu\"><ul><li class=\"tooltip_comment\"></li><li class=\"tooltip_attch\"></li><li class=\"tooltip_people\"></li></ul></div><div class=\"handle\"></div></li>');
+		$('#todayposts').after(newPost);
+		$(".posts_row").click(open_dialog);
+		//alert( $(".post-box").text() );
+	}
 });
