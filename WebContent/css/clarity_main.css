@@ -1,0 +1,94 @@
+.new_header {
+    background-color: blue;
+    width: 100%;
+    height: 13%;
+    margin: 0px;
+    padding: 0px;
+}
+.new_body {
+    clear: both;
+    display: block;
+    padding: 0px;
+}
+.left-sidebar {
+    position: relative;
+    width: 15%;      
+    display: block;
+    height: 80%;      
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.center-content {
+    width: 60%;      height: 80%;      
+    display: block;
+    float: left;
+    background-color: rgb(69, 151, 79);
+    margin: 0px;
+    padding: 0px;
+}
+.right-sidebar {
+    width: 25%;  height: 80%;  display: block;  
+    float: right;  
+    background-color: rgb(82, 69, 151);  margin: 0px;  padding: 0px;
+}
+.photo {
+    margin: 0px;  padding: 0px;  
+    position: absolute;  top: 10px;  
+    left: 25px;  float: left;  width: 40px;  height: 40px;  
+    background-color: rgb(233, 227, 228);
+}
+ {
+}
+
+.profile {
+    height: 25%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+}
+.links {
+    position: relative;
+    height: 40%;  width: 100%;  
+    background-color: rgb(255, 255, 255);
+}
+.groups {
+    height: 35%;  
+    width: 100%;  background-color: red;
+}
+.username {
+    position: relative;
+    display: list-item;
+    clear: both;
+    width: 80px;
+    height: 25px;
+    Font-size: 0.8em;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 0.9;
+    background-color: rgb(253, 253, 253);
+    color: rgb(47, 47, 70);
+}
+.edit-user {
+    position: relative;      
+    display: list-item;
+    clear: both;
+    height: 15px;
+    background-color: white;
+    width: 80px;    Font-size: 0.8em;  
+    font-family: serif;  
+    line-height: 1.5;    
+    color: rgb(53, 53, 85);
+}
+.name {
+    display: block;
+    position: absolute;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    left: 71px;
+}
+.edit-user a {
+    text-decoration: none;
+}
